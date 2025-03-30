@@ -1,0 +1,75 @@
+/* Basic JavaScript Structure */
+
+// 1. Variable Declaration
+let x = 10;       // Can be changed
+const y = 20;     // Cannot be changed
+
+// 2. Data Types
+let str = "Hello";  // String
+let num = 10;       // Number
+let isTrue = true;  // Boolean
+let arr = [1, 2, 3]; // Array
+let obj = { name: "John", age: 25 }; // Object
+let und;            // Undefined
+let n = null;       // Null
+
+// 3. Functions
+function greet(name) {
+  return "Hello, " + name;
+}
+
+const add = function (a, b) {
+  return a + b;
+};
+
+const multiply = (a, b) => a * b;
+
+// 4. Conditional Statements
+let age = 18;
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+
+// Ternary Operator
+let status = age >= 18 ? "Adult" : "Minor";
+
+// 5. Loops
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let count = 0;
+while (count < 5) {
+  console.log(count);
+  count++;
+}
+
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(num => console.log(num));
+
+// 6. Objects and Arrays
+let person = {
+  name: "Alice",
+  age: 30,
+  greet: function () {
+    console.log("Hello, " + this.name);
+  }
+};
+
+console.log(person.name);
+person.greet();
+
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits[0]);
+fruits.push("Orange");
+
+// 7. DOM Manipulation
+let heading = document.getElementById("title");
+heading.innerText = "New Title";
+heading.style.color = "blue";
+
+document.getElementById("btn").addEventListener("click", function () {
+  alert("Button clicked!");
+});
